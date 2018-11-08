@@ -308,7 +308,7 @@
 //   return newArray;
 // }
 
-// //Someone else's solution
+// //Alternate Solution
 // function getElementsThatEqual10AtProperty(obj, key) {
 //   if (Array.isArray(obj[key])) {
 //     return obj[key].filter(item => {
@@ -436,7 +436,7 @@
 //   }
 // }
 
-//RETURN HERE -- USE REDUCE OR SORT?
+
 // function getSmallestElementAtProperty(obj, key) {
 //   const arr = obj[key];
 //   let minElement = arr[0];
@@ -521,7 +521,7 @@
 //   }
 // }
 // //REDUCE has to know what to start wtih
-// //two parameters: firs tparameter is a function it will apply to everything, 2nd parameter is seed(start)
+// //two parameters: first parameter is a function it will apply to everything, 2nd parameter is seed(start)
 // //first parameter is (product, element), second parameter is starting value - 1
 // function select(arr, obj) {
 //   const newObj = {};
@@ -794,22 +794,6 @@
 //   }, '');
 // }
 
-// //ERROR WITH TIES
-// function findSmallestNumberAmongMixedElements(arr) {
-//   const smallestNumber = arr.reduce((smallNumber, element) => {
-//     if (typeof element === 'number') {
-//       if (typeof element !== 'number' || element < smallNumber) {
-//         smallNumber = element;
-//       }
-//     }
-//     return smallNumber
-//   }, arr[0]);
-//   if (typeof smallestNumber !== 'number') {
-//     return 0;
-//   }
-//   return smallestNumber;
-// }
-
 // function findSmallestNumberAmongMixedElements(arr) {
 //   const numArray = arr.filter(element => typeof element === 'number');
 //   if (arr.length === 0 || numArray.length === 0) {
@@ -846,19 +830,6 @@
 //   }
 // }
 
-// Alternate solutions using sort-- Return to these:
-// //Hubert Lin
-// function getLongestOfThreeWords(word1, word2, word3) {
-//   var args = [...arguments]
-//   return args.sort((a, b) => b.length - a.length)[0]
-// }
-
-// //Jake Preston
-// function getLongestOfThreeWords(word1, word2, word3) {
-//   var words = [word1, word2, word3]
-//   words.sort((a, b) => a.length < b.length)
-//   return words[0]
-// }
 
 // function findShortestOfThreeWords(word1, word2, word3) {
 //   const arr = [word1, word2, word3];
@@ -919,29 +890,6 @@
 
 // convertScoreToGrade(91)
 
-// Examine this solution with Gabe:
-// //Hubert Lin
-// //Using {return `INVALID SCORE`}
-// //Souldn't need additional break after return statement
-// function convertScoreToGrade(score) {
-//   if (score > 100 || score < 0) { return `INVALID SCORE` };
-//   switch (true) {
-//     case (score >= 90):
-//       return 'A';
-//       break;
-//     case (score >= 80):
-//       return 'B';
-//       break;
-//     case (score >= 70):
-//       return 'C';
-//       break;
-//     case (score >= 60):
-//       return 'D';
-//       break;
-//     default:
-//       return 'F';
-//   }
-// }
 
 // function convertScoreToGrade(score) {
 //   switch (true) {
